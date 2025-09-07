@@ -1,0 +1,18 @@
+/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/huggingface_hub/file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py", line 25, in main
+    train_loader, valid_loader = make_loader(config, data_class)
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/data/base.py", line 76, in make_loader
+    train_set = data_class(
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/data/base.py", line 25, in __init__
+    self.data = json.load(file)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 2 column 1 (char 161613)
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

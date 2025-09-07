@@ -1,0 +1,12 @@
+name_or_path: bert-base-uncased
+weight_path: /data/sls/scratch/nmorgan/LOGIC/rag_models/bert_model
+class_name: AutoModelForSCIFI
+edit_modules:
+- backbone.encoder.layer.9.output.dense
+- backbone.encoder.layer.10.output.dense
+- backbone.encoder.layer.11.output.dense
+
+# - backbone.encoder.layer.21.intermediate.dense
+# - backbone.encoder.layer.22.intermediate.dense
+# - backbone.encoder.layer.23.intermediate.dense
+half: False

@@ -1,0 +1,5 @@
+name: fever
+n_edits: 1024
+batch_size: 32
+train_path: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/data_files/fever_train.json
+valid_path: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/data_files/fever_eval.json

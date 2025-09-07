@@ -1,0 +1,32 @@
+model_device: cuda:0
+editor_device: cuda:0
+data:
+  name: fever
+  n_edits: 1024
+  batch_size: 32
+  train_path: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_old/data_files/fever_train.json
+  valid_path: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_old/data_files/fever_eval.json
+model:
+  name_or_path: bert-large-cased
+  class_name: AutoModelForFEVER
+  edit_modules:
+  - backbone.encoder.layer.18.output.dense
+  - backbone.encoder.layer.19.output.dense
+  - backbone.encoder.layer.20.output.dense
+  - backbone.encoder.layer.21.output.dense
+  - backbone.encoder.layer.22.output.dense
+  - backbone.encoder.layer.23.output.dense
+  half: false
+editor:
+  name: malmen
+  rank: 1920
+  n_blocks: 2
+  lr: 1.0e-06
+  meta_lr: 1.0e-05
+  loc_coef: 1
+  max_grad_norm: 1
+  n_epochs: 1
+  batch_size: 1024
+  token: ans
+  cache_dir: cache/
+  load_checkpoint: false

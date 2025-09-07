@@ -1,0 +1,118 @@
+********** HERE A ****************
+<class 'data.scifi.SCIFIDataset'>
+> /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py(27)main()
+-> print(config)
+{'model_device': 'cuda:0', 'editor_device': 'cuda:0', 'data': {'name': 'scifi', 'n_edits': 500, 'batch_size': 32, 'train_path': '/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/data_files/scifi_train.json', 'valid_path': '/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/data_files/scifi_test.json'}, 'model': {'name_or_path': 'bert-large-cased', 'weight_path': '/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/model_files/bert_large_cased', 'class_name': 'AutoModelForSCIFI', 'edit_modules': ['backbone.encoder.layer.18.output.dense', 'backbone.encoder.layer.19.output.dense', 'backbone.encoder.layer.20.output.dense', 'backbone.encoder.layer.21.output.dense', 'backbone.encoder.layer.22.output.dense', 'backbone.encoder.layer.23.output.dense'], 'half': False}, 'editor': {'name': 'malmen', 'rank': 1920, 'n_blocks': 2, 'lr': 1e-06, 'meta_lr': 1e-05, 'loc_coef': 1, 'max_grad_norm': 1, 'n_epochs': 1, 'batch_size': 1024, 'token': 'ans', 'cache_dir': 'cache/', 'load_checkpoint': False}}
+> /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py(28)main()
+-> train_loader, valid_loader = make_loader(config, data_class)
+/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/huggingface_hub/file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+> /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py(29)main()
+-> print("********** HERE B ****************")
+********** HERE B ****************
+> /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py(31)main()
+-> model = make_model(config.model).to(config.model_device)
+> /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py(32)main()
+-> print("********** HERE C ****************")
+********** HERE C ****************
+> /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py(34)main()
+-> editor_module = importlib.import_module(f"editor.{config.editor.name}")
+> /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py(35)main()
+-> editor_class = getattr(editor_module, config.editor.name.upper())
+*** SyntaxError: invalid syntax
+*** SyntaxError: invalid syntax
+> /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py(36)main()
+-> editor = editor_class(config, model)
+> /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py(37)main()
+-> editor.run(train_loader, valid_loader)
+***************** RUN A *******************
+*********************TRAIN A******************
+0
+> /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py(38)main()
+-> print("********** HERE D ****************")
+********** HERE D ****************
+--Return--
+> /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py(38)main()->None
+-> print("********** HERE D ****************")
+Train: 0it [00:00, ?it/s]
+Valid: 0it [00:00, ?it/s]
+--Call--
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/core/utils.py(262)return_value()
+-> @return_value.setter
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/core/utils.py(264)return_value()
+-> self._return_value = value
+--Return--
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/core/utils.py(264)return_value()->None
+-> self._return_value = value
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/core/utils.py(187)run_job()
+-> ret.status = JobStatus.COMPLETED
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/core/utils.py(183)run_job()
+-> with env_override(hydra_cfg.hydra.job.env_set):
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/core/utils.py(192)run_job()
+-> ret.task_name = JobRuntime.instance().get("name")
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/core/utils.py(194)run_job()
+-> _flush_loggers()
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/core/utils.py(196)run_job()
+-> callbacks.on_job_end(config=config, job_return=ret)
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/core/utils.py(198)run_job()
+-> return ret
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/core/utils.py(200)run_job()
+-> HydraConfig.instance().cfg = orig_hydra_cfg
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/core/utils.py(201)run_job()
+-> if _chdir:
+--Return--
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/core/utils.py(201)run_job()->JobReturn(ove...rn_value=None)
+-> if _chdir:
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/_internal/hydra.py(129)run()
+-> callbacks.on_run_end(config=cfg, config_name=config_name, job_return=ret)
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/_internal/hydra.py(132)run()
+-> _ = ret.return_value
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/_internal/hydra.py(134)run()
+-> return ret
+--Return--
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/_internal/hydra.py(134)run()->JobReturn(ove...rn_value=None)
+-> return ret
+--Return--
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/_internal/utils.py(458)<lambda>()->JobReturn(ove...rn_value=None)
+-> lambda: hydra.run(
+--Return--
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/_internal/utils.py(220)run_and_report()->JobReturn(ove...rn_value=None)
+-> return func()
+--Return--
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/_internal/utils.py(457)_run_app()->None
+-> run_and_report(
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/_internal/utils.py(427)_run_hydra()
+-> GlobalHydra.instance().clear()
+--Return--
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/_internal/utils.py(427)_run_hydra()->None
+-> GlobalHydra.instance().clear()
+--Return--
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/hydra/main.py(94)decorated_main()->None
+-> _run_hydra(
+--Return--
+> /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py(41)<module>()->None
+-> main()
+--Call--
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/threading.py(1518)_shutdown()
+-> def _shutdown():
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/threading.py(1527)_shutdown()
+-> if _main_thread._is_stopped:
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/threading.py(1532)_shutdown()
+-> _SHUTTING_DOWN = True
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/threading.py(1536)_shutdown()
+-> for atexit_call in reversed(_threading_atexits):
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/threading.py(1537)_shutdown()
+-> atexit_call()
+> /data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/threading.py(1536)_shutdown()
+-> for atexit_call in reversed(_threading_atexits):
+Exception ignored in: <module 'threading' from '/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/threading.py'>
+Traceback (most recent call last):
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/threading.py", line 1536, in _shutdown
+    for atexit_call in reversed(_threading_atexits):
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/threading.py", line 1536, in _shutdown
+    for atexit_call in reversed(_threading_atexits):
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit:

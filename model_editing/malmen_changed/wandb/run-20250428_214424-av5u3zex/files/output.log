@@ -1,0 +1,26 @@
+/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/huggingface_hub/file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+********** HERE A ****************
+<class 'data.scifi.SCIFIDataset'>
+{'model_device': 'cuda:0', 'editor_device': 'cuda:0', 'data': {'name': 'scifi', 'n_edits': 400, 'batch_size': 32, 'train_path': '/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/data_files/scifi_train.json', 'valid_path': '/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/data_files/scifi_test.json'}, 'model': {'name_or_path': 'bert-large-cased', 'weight_path': '/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/model_files/bert_large_cased', 'class_name': 'AutoModelForSCIFI', 'edit_modules': ['backbone.encoder.layer.18.output.dense', 'backbone.encoder.layer.19.output.dense', 'backbone.encoder.layer.20.output.dense', 'backbone.encoder.layer.21.output.dense', 'backbone.encoder.layer.22.output.dense', 'backbone.encoder.layer.23.output.dense'], 'half': False}, 'editor': {'name': 'malmen', 'rank': 1920, 'n_blocks': 2, 'lr': 1e-06, 'meta_lr': 1e-05, 'loc_coef': 1, 'max_grad_norm': 1, 'n_epochs': 1, 'batch_size': 1024, 'token': 'ans', 'cache_dir': 'cache/', 'load_checkpoint': False}}
+********** HERE B ****************
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py", line 37, in main
+    editor.run(train_loader, valid_loader)
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/editor/base.py", line 182, in run
+    self.train(train_loader)
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/editor/base.py", line 81, in train
+    for elt in loader:
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 677, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+    return self.collate_fn(data)
+TypeError: BaseDataset.collate_fn() takes 1 positional argument but 2 were given
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+********** HERE C ****************
+***************** RUN A *******************
+*********************TRAIN A******************
+1

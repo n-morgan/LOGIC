@@ -1,0 +1,10 @@
+/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/huggingface_hub/file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py", line 27, in main
+    model = make_model(config.model).to(config.model_device)
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/model.py", line 63, in make_model
+    model = AutoModelforSCIFI(config.weight_path)
+NameError: name 'AutoModelforSCIFI' is not defined
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

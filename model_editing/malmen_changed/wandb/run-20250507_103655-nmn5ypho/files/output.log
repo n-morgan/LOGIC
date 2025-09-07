@@ -1,0 +1,18 @@
+********** HERE A ****************
+<class 'data.scifi.SCIFIDataset'>
+{'model_device': 'cuda:0', 'editor_device': 'cuda:0', 'data': {'name': 'scifi', 'n_edits': 400, 'batch_size': 32, 'train_path': '/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/data_files/scifi_train.json', 'valid_path': '/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/data_files/scifi_test.json'}, 'model': {'name_or_path': 'bert-base-uncased', 'weight_path': '/data/sls/scratch/nmorgan/LOGIC/rag_models/bert_model', 'class_name': 'AutoModelForSCIFI', 'edit_modules': ['backbone.encoder.layer.9.output.dense', 'backbone.encoder.layer.10.output.dense', 'backbone.encoder.layer.11.output.dense', 'backbone.encoder.layer.12.output.dense'], 'half': False}, 'editor': {'name': 'malmen', 'rank': 1920, 'n_blocks': 2, 'lr': 1e-06, 'meta_lr': 1e-05, 'loc_coef': 1, 'max_grad_norm': 1, 'n_epochs': 1, 'batch_size': 1024, 'token': 'ans', 'cache_dir': 'cache/', 'load_checkpoint': False}}
+/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/huggingface_hub/file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+********** HERE B ****************
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py", line 31, in main
+    model = make_model(config.model).to(config.model_device)
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/model.py", line 88, in make_model
+    module = get_module(model, module_name)
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/util.py", line 35, in get_module
+    module = getattr(module, name)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1614, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'ModuleList' object has no attribute '12'
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

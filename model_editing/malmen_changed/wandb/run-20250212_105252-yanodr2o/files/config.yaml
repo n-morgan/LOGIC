@@ -1,0 +1,76 @@
+wandb_version: 1
+
+model_device:
+  desc: null
+  value: cuda:0
+editor_device:
+  desc: null
+  value: cuda:0
+data:
+  desc: null
+  value:
+    name: fever
+    n_edits: 1024
+    batch_size: 32
+    train_path: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/data_files/fever_train.json
+    valid_path: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/data_files/fever_eval.json
+model:
+  desc: null
+  value:
+    name_or_path: bert-large-cased
+    class_name: AutoModelForFEVER
+    edit_modules:
+    - backbone.encoder.layer.18.output.dense
+    - backbone.encoder.layer.19.output.dense
+    - backbone.encoder.layer.20.output.dense
+    - backbone.encoder.layer.21.output.dense
+    - backbone.encoder.layer.22.output.dense
+    - backbone.encoder.layer.23.output.dense
+    half: false
+editor:
+  desc: null
+  value:
+    name: malmen
+    rank: 1920
+    n_blocks: 2
+    lr: 1.0e-06
+    meta_lr: 1.0e-05
+    loc_coef: 1
+    max_grad_norm: 1
+    n_epochs: 1
+    batch_size: 1024
+    token: ans
+    cache_dir: cache/
+    load_checkpoint: false
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.16
+    cli_version: 0.15.8
+    framework: huggingface
+    huggingface_version: 4.32.0
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1739375572.033421
+    t:
+      1:
+      - 1
+      - 11
+      - 49
+      - 50
+      - 55
+      2:
+      - 1
+      - 11
+      - 49
+      - 50
+      - 55
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.10.16
+      5: 0.15.8
+      6: 4.32.0
+      8:
+      - 5

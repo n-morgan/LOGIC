@@ -1,0 +1,30 @@
+model_device: cuda:0
+editor_device: cuda:0
+data:
+  name: scifi
+  n_edits: 400
+  batch_size: 32
+  train_path: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/data_files/scifi_train.json
+  valid_path: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/data_files/scifi_test.json
+model:
+  name_or_path: bert-base-uncased
+  weight_path: /data/sls/scratch/nmorgan/LOGIC/rag_models/bert_model
+  class_name: AutoModelForSCIFI
+  edit_modules:
+  - backbone.encoder.layer.9.output.dense
+  - backbone.encoder.layer.10.output.dense
+  - backbone.encoder.layer.11.output.dense
+  half: false
+editor:
+  name: malmen
+  rank: 1920
+  n_blocks: 2
+  lr: 1.0e-06
+  meta_lr: 1.0e-05
+  loc_coef: 1
+  max_grad_norm: 1
+  n_epochs: 1
+  batch_size: 500
+  token: ans
+  cache_dir: cache/
+  load_checkpoint: false

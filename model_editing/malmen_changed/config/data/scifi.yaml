@@ -1,0 +1,5 @@
+name: scifi
+n_edits: 400
+batch_size: 32
+train_path: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/data_files/scifi_train.json
+valid_path: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/data_files/scifi_test.json

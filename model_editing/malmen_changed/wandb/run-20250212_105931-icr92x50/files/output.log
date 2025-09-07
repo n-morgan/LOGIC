@@ -1,0 +1,21 @@
+/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/huggingface_hub/file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/main.py", line 29, in main
+    editor_module = importlib.import_module(f"editor.{config.editor.name}")
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/editor/malmen.py", line 9, in <module>
+    from editor.base import BaseEditor
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/editor/base.py", line 108
+    (self.config.editor.loc_coef * loss.backward()
+    ^
+SyntaxError: '(' was never closed
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

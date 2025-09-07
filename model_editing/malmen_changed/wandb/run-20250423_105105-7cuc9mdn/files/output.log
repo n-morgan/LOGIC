@@ -1,0 +1,24 @@
+
+********** HERE A ****************
+/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/huggingface_hub/file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+********** HERE B ****************
+********** HERE C ****************
+***************** RUN A *******************
+*********************TRAIN A******************
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py", line 34, in main
+    editor.run(train_loader, valid_loader)
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/editor/base.py", line 173, in run
+    self.train(train_loader)
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/editor/base.py", line 81, in train
+    print(next(data_iter))
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 676, in _next_data
+    index = self._next_index()  # may raise StopIteration
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 623, in _next_index
+    return next(self._sampler_iter)  # may raise StopIteration
+StopIteration
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

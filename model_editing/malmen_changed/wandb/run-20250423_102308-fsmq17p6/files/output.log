@@ -1,0 +1,12 @@
+/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/huggingface_hub/file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py", line 27, in main
+    model = make_model(config.model).to(config.model_device)
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/model.py", line 66, in make_model
+    model_class = getattr(transformers, config.class_name)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/transformers/utils/import_utils.py", line 1123, in __getattr__
+    raise AttributeError(f"module {self.__name__} has no attribute {name}")
+AttributeError: module transformers has no attribute AutoModelForSCIFI
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

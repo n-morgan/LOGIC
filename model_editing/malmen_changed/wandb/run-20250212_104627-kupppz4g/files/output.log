@@ -1,0 +1,12 @@
+/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/huggingface_hub/file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/main.py", line 25, in main
+    train_loader, valid_loader = make_loader(config, data_class)
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/data/base.py", line 76, in make_loader
+    train_set = data_class(
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/data/base.py", line 24, in __init__
+    with open(path) as file:
+FileNotFoundError: [Errno 2] No such file or directory: '/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_old/data_files/fever_train.json'
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

@@ -1,0 +1,20 @@
+/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/huggingface_hub/file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Train:   0%|                                                                | 0/101 [00:00<?, ?it/s]
+Train:   0%|                                                                | 0/101 [00:20<?, ?it/s]
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/main.py", line 32, in main
+    editor.run(train_loader, valid_loader)
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/editor/base.py", line 167, in run
+    self.train(train_loader)
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/editor/base.py", line 107, in train
+    (self.config.editor.loc_coef * loss).backward()
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/torch/autograd/__init__.py", line 193, in backward
+    grad_tensors_ = _make_grads(tensors, grad_tensors_, is_grads_batched=False)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/torch/autograd/__init__.py", line 88, in _make_grads
+    raise RuntimeError("grad can be implicitly created only for scalar outputs")
+RuntimeError: grad can be implicitly created only for scalar outputs
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

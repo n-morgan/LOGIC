@@ -1,0 +1,1178 @@
+2025-02-12 19:27:25,884 INFO    StreamThr :1095426 [internal.py:wandb_internal():86] W&B internal server running at pid: 1095426, started at: 2025-02-12 19:27:25.882247
+2025-02-12 19:27:25,887 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status
+2025-02-12 19:27:25,891 INFO    WriterThread:1095426 [datastore.py:open_for_write():85] open: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/run-b721ccoa.wandb
+2025-02-12 19:27:25,895 DEBUG   SenderThread:1095426 [sender.py:send():379] send: header
+2025-02-12 19:27:25,916 DEBUG   SenderThread:1095426 [sender.py:send():379] send: run
+2025-02-12 19:27:26,170 INFO    SenderThread:1095426 [dir_watcher.py:__init__():211] watching files in: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files
+2025-02-12 19:27:26,170 INFO    SenderThread:1095426 [sender.py:_start_run_threads():1121] run started: b721ccoa with start time 1739406445.883838
+2025-02-12 19:27:26,174 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:27:26,175 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:27:26,193 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: check_version
+2025-02-12 19:27:26,194 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: check_version
+2025-02-12 19:27:26,275 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: run_start
+2025-02-12 19:27:26,316 DEBUG   HandlerThread:1095426 [system_info.py:__init__():31] System info init
+2025-02-12 19:27:26,316 DEBUG   HandlerThread:1095426 [system_info.py:__init__():46] System info init done
+2025-02-12 19:27:26,317 INFO    HandlerThread:1095426 [system_monitor.py:start():181] Starting system monitor
+2025-02-12 19:27:26,317 INFO    SystemMonitor:1095426 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2025-02-12 19:27:26,318 INFO    HandlerThread:1095426 [system_monitor.py:probe():201] Collecting system info
+2025-02-12 19:27:26,319 INFO    SystemMonitor:1095426 [interfaces.py:start():190] Started cpu monitoring
+2025-02-12 19:27:26,320 INFO    SystemMonitor:1095426 [interfaces.py:start():190] Started disk monitoring
+2025-02-12 19:27:26,322 INFO    SystemMonitor:1095426 [interfaces.py:start():190] Started gpu monitoring
+2025-02-12 19:27:26,324 INFO    SystemMonitor:1095426 [interfaces.py:start():190] Started memory monitoring
+2025-02-12 19:27:26,328 INFO    SystemMonitor:1095426 [interfaces.py:start():190] Started network monitoring
+2025-02-12 19:27:26,470 DEBUG   HandlerThread:1095426 [system_info.py:probe():195] Probing system
+2025-02-12 19:27:26,476 DEBUG   HandlerThread:1095426 [system_info.py:_probe_git():180] Probing git
+2025-02-12 19:27:26,518 DEBUG   HandlerThread:1095426 [system_info.py:_probe_git():188] Probing git done
+2025-02-12 19:27:26,519 DEBUG   HandlerThread:1095426 [system_info.py:probe():240] Probing system done
+2025-02-12 19:27:26,519 DEBUG   HandlerThread:1095426 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-107-generic-x86_64-with-glibc2.35', 'python': '3.10.16', 'heartbeatAt': '2025-02-13T00:27:26.470788', 'startedAt': '2025-02-13T00:27:25.841655', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/main.py', 'codePath': 'main.py', 'git': {'remote': 'https://github.com/ChenmienTan/malmen', 'commit': '1df295dc032b3ff9a002976e081432cb4f09d342'}, 'email': None, 'root': '/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen', 'host': 'sls-a5-1.csail.mit.edu', 'username': 'nmorgan', 'executable': '/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/bin/python', 'cpu_count': 48, 'cpu_count_logical': 96, 'cpu_freq': {'current': 2068.668322916667, 'min': 800.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2099.998, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 836.392, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 815.077, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}], 'disk': {'total': 860.488525390625, 'used': 7.148681640625}, 'gpu': 'NVIDIA RTX A5000', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}, {'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}, {'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}, {'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}], 'memory': {'total': 503.50934982299805}}
+2025-02-12 19:27:26,519 INFO    HandlerThread:1095426 [system_monitor.py:probe():211] Finished collecting system info
+2025-02-12 19:27:26,519 INFO    HandlerThread:1095426 [system_monitor.py:probe():214] Publishing system info
+2025-02-12 19:27:26,519 DEBUG   HandlerThread:1095426 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2025-02-12 19:27:26,522 DEBUG   HandlerThread:1095426 [system_info.py:_save_pip():67] Saving pip packages done
+2025-02-12 19:27:26,523 DEBUG   HandlerThread:1095426 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2025-02-12 19:27:27,176 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_created():271] file/dir created: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/conda-environment.yaml
+2025-02-12 19:27:27,177 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_created():271] file/dir created: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:27:27,177 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_created():271] file/dir created: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/requirements.txt
+2025-02-12 19:27:29,553 DEBUG   HandlerThread:1095426 [system_info.py:_save_conda():86] Saving conda packages done
+2025-02-12 19:27:29,558 INFO    HandlerThread:1095426 [system_monitor.py:probe():216] Finished publishing system info
+2025-02-12 19:27:29,568 DEBUG   SenderThread:1095426 [sender.py:send():379] send: files
+2025-02-12 19:27:29,568 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2025-02-12 19:27:29,587 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:27:29,588 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:27:29,768 DEBUG   SenderThread:1095426 [sender.py:send():379] send: telemetry
+2025-02-12 19:27:29,871 INFO    wandb-upload_0:1095426 [upload_job.py:push():131] Uploaded file /tmp/tmpzlhzhej_wandb/yi8jfydw-wandb-metadata.json
+2025-02-12 19:27:30,178 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_created():271] file/dir created: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-metadata.json
+2025-02-12 19:27:30,179 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_created():271] file/dir created: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:27:31,772 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:27:32,183 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:27:36,774 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:27:39,199 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:27:41,202 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:27:42,204 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:27:42,672 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:27:44,585 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:27:44,587 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:27:48,670 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:27:50,045 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:27:50,049 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:27:50,049 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:27:50,054 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:27:50,216 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:27:52,219 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:27:54,055 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:27:59,062 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:27:59,225 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/config.yaml
+2025-02-12 19:27:59,325 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:27:59,327 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:27:59,327 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:27:59,330 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:27:59,586 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:27:59,586 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:28:00,226 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:28:02,229 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:28:04,711 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:28:08,318 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:28:08,320 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:28:08,320 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:28:08,324 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:28:09,235 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:28:10,237 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:28:10,325 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:28:14,587 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:28:14,588 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:28:15,675 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:28:17,056 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:28:17,058 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:28:17,059 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:28:17,063 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:28:17,244 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:28:18,247 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:28:21,102 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:28:26,103 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:28:26,329 DEBUG   SystemMonitor:1095426 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2025-02-12 19:28:26,334 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:28:27,126 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:28:27,127 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:28:27,128 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:28:27,130 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:28:27,265 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:28:28,268 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:28:29,600 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:28:29,601 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:28:31,763 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:28:36,764 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:28:36,849 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:28:36,851 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:28:36,852 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:28:36,857 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:28:37,279 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:28:38,281 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:28:41,859 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:28:44,592 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:28:44,594 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:28:46,301 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:28:46,303 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:28:46,303 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:28:46,305 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:28:47,292 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:28:47,345 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:28:48,294 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:28:52,346 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:28:55,303 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:28:55,305 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:28:55,306 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:28:55,308 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:28:56,303 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:28:56,303 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:28:56,338 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:28:58,340 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:28:59,592 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:28:59,593 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:29:03,759 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:29:05,582 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:29:05,584 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:29:05,584 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:29:05,589 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:29:06,316 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:29:08,319 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:29:09,591 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:29:14,592 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:29:14,594 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:29:14,721 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:29:15,299 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:29:15,301 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:29:15,301 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:29:15,305 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:29:15,327 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:29:16,330 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:29:20,307 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:29:24,980 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:29:24,982 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:29:24,983 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:29:24,986 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:29:25,340 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:29:25,987 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:29:26,342 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:29:26,346 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:29:29,593 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:29:29,595 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:29:31,748 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:29:34,323 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:29:34,325 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:29:34,326 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:29:34,328 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:29:34,354 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:29:36,356 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:29:37,330 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:29:42,331 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:29:43,963 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:29:43,966 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:29:43,966 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:29:43,969 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:29:44,365 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:29:44,366 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:29:44,657 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:29:44,658 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:29:47,825 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:29:52,826 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:29:54,035 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:29:54,037 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:29:54,037 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:29:54,040 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:29:54,377 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:29:56,347 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:29:56,381 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:29:58,349 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:29:59,655 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:29:59,657 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:30:03,787 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:30:03,790 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:30:03,791 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:30:03,792 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:30:03,794 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:30:04,393 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:30:04,394 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:30:08,797 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:30:13,486 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:30:13,488 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:30:13,489 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:30:13,491 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:30:14,405 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:30:14,406 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:30:14,492 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:30:14,655 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:30:14,656 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:30:19,777 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:30:22,326 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:30:22,328 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:30:22,329 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:30:22,331 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:30:22,416 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:30:24,420 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:30:25,333 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:30:26,349 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:30:29,681 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:30:29,683 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:30:30,820 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:30:32,217 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:30:32,219 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:30:32,220 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:30:32,222 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:30:32,430 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:30:34,434 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:30:36,224 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:30:41,225 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:30:41,901 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:30:41,904 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:30:41,904 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:30:41,907 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:30:42,442 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:30:42,443 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:30:44,680 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:30:44,681 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:30:46,772 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:30:51,774 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:30:52,065 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:30:52,067 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:30:52,068 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:30:52,071 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:30:52,454 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:30:54,458 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:30:56,351 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:30:57,353 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:30:59,702 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:30:59,702 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:31:01,256 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:31:01,257 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:31:01,257 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:31:01,259 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:31:01,466 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:31:02,468 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:31:03,297 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:31:08,298 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:31:09,271 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:31:09,272 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:31:09,273 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:31:09,274 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:31:09,474 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:31:10,475 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:31:14,276 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:31:14,751 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:31:14,752 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:31:17,415 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:31:17,416 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:31:17,417 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:31:17,420 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:31:17,483 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:31:18,484 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:31:19,421 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:31:24,422 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:31:25,526 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:31:25,529 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:31:25,529 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:31:25,532 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:31:26,355 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:31:26,493 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:31:26,494 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:31:29,751 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:31:29,753 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:31:29,885 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:31:34,887 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:31:35,204 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:31:35,207 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:31:35,208 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:31:35,215 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:31:35,504 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:31:36,506 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:31:40,217 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:31:44,717 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:31:44,719 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:31:44,719 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:31:44,722 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:31:44,752 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:31:44,753 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:31:45,515 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:31:45,865 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:31:46,518 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:31:50,866 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:31:54,280 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:31:54,282 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:31:54,282 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:31:54,285 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:31:54,528 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:31:56,287 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:31:56,359 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:31:56,532 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:31:59,751 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:31:59,753 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:32:01,885 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:32:03,706 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:32:03,709 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:32:03,709 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:32:03,711 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:32:04,540 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:32:04,541 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:32:07,713 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:32:11,672 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:32:11,674 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:32:11,674 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:32:11,679 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:32:12,548 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:32:12,548 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:32:13,680 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:32:14,751 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:32:14,752 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:32:18,876 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:32:19,374 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:32:19,375 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:32:19,376 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:32:19,377 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:32:19,554 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:32:20,555 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:32:24,379 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:32:26,363 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:32:27,551 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:32:27,553 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:32:27,553 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:32:27,554 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:32:27,561 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:32:28,563 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:32:29,556 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:32:29,757 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:32:29,758 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:32:34,828 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:32:36,101 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:32:36,103 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:32:36,103 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:32:36,106 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:32:36,572 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:32:36,573 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:32:40,146 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:32:44,757 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:32:44,758 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:32:45,601 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:32:45,603 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:32:45,604 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:32:45,604 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:32:45,609 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:32:46,584 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:32:46,585 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:32:50,611 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:32:55,449 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:32:55,452 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:32:55,452 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:32:55,455 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:32:55,594 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:32:56,366 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:32:56,369 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:32:56,597 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:32:59,758 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:32:59,759 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:33:01,841 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:33:04,965 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:33:04,969 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:33:04,970 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:33:04,973 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:33:05,608 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:33:06,609 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:33:06,974 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:33:11,975 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:33:13,535 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:33:13,537 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:33:13,538 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:33:13,539 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:33:13,616 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:33:14,619 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:33:14,794 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:33:14,795 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:33:17,894 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:33:22,895 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:33:23,226 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:33:23,227 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:33:23,228 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:33:23,232 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:33:23,630 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:33:24,631 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:33:26,370 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:33:28,373 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:33:29,784 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:33:29,785 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:33:32,065 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:33:32,068 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:33:32,069 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:33:32,071 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:33:32,641 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:33:32,642 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:33:34,073 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:33:39,074 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:33:41,326 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:33:41,328 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:33:41,328 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:33:41,331 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:33:41,650 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:33:42,652 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:33:44,332 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:33:44,784 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:33:44,785 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:33:49,895 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:33:50,188 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:33:50,189 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:33:50,190 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:33:50,193 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:33:50,662 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:33:50,662 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:33:55,195 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:33:56,373 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:33:59,176 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:33:59,177 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:33:59,177 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:33:59,179 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:33:59,671 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:33:59,785 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:33:59,785 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:34:00,673 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:34:00,875 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:34:05,876 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:34:08,497 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:34:08,499 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:34:08,499 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:34:08,502 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:34:08,682 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:34:10,685 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:34:11,504 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:34:14,785 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:34:14,786 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:34:16,920 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:34:17,983 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:34:17,985 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:34:17,985 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:34:17,987 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:34:18,697 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:34:18,697 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:34:21,988 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:34:26,377 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:34:26,977 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:34:26,979 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:34:26,980 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:34:26,982 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:34:27,706 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:34:27,984 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:34:28,708 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:34:29,790 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:34:29,791 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:34:33,907 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:34:35,919 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:34:35,921 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:34:35,921 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:34:35,924 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:34:36,716 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:34:36,717 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:34:38,925 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:34:43,926 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:34:44,791 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:34:44,791 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:34:44,878 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:34:44,882 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:34:44,883 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:34:44,885 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:34:45,725 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:34:46,727 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:34:49,886 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:34:53,950 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:34:53,951 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:34:53,952 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:34:53,954 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:34:54,737 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:34:54,738 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:34:54,993 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:34:56,380 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:34:59,791 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:34:59,791 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:35:00,855 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:35:03,423 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:35:03,425 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:35:03,425 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:35:03,427 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:35:03,747 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:35:04,749 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:35:06,429 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:35:11,430 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:35:12,169 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:35:12,171 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:35:12,171 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:35:12,174 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:35:12,759 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:35:12,759 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:35:14,794 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:35:14,795 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:35:16,933 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:35:21,363 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:35:21,365 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:35:21,365 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:35:21,367 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:35:21,769 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:35:22,369 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:35:22,771 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:35:26,384 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:35:27,386 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:35:29,794 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:35:29,795 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:35:30,313 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:35:30,314 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:35:30,315 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:35:30,317 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:35:30,780 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:35:30,780 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:35:33,319 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:35:38,321 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:35:39,337 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:35:39,339 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:35:39,340 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:35:39,343 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:35:39,789 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:35:40,790 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:35:43,345 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:35:44,892 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:35:44,894 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:35:48,064 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:35:48,066 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:35:48,066 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:35:48,067 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:35:48,798 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:35:48,799 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:35:49,069 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:35:54,069 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:35:56,149 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:35:56,151 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:35:56,151 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:35:56,152 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:35:56,387 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:35:56,807 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:35:56,808 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:35:59,389 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:35:59,891 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:35:59,891 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:36:04,684 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:36:04,685 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:36:04,685 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:36:04,686 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:36:04,687 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:36:04,814 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:36:06,816 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:36:09,688 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:36:12,474 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:36:12,476 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:36:12,477 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:36:12,478 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:36:12,822 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:36:14,823 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:36:14,891 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:36:14,892 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:36:14,970 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:36:19,970 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:36:20,424 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:36:20,426 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:36:20,426 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:36:20,428 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:36:20,830 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:36:20,830 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:36:25,429 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:36:26,391 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:36:28,401 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:36:28,403 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:36:28,403 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:36:28,404 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:36:28,838 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:36:28,838 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:36:29,891 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:36:29,893 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:36:31,011 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:36:36,012 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:36:36,921 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:36:36,922 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:36:36,922 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:36:36,925 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:36:37,846 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:36:38,848 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:36:41,927 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:36:44,893 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:36:44,894 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:36:45,945 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:36:45,947 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:36:45,948 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:36:45,950 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:36:46,858 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:36:46,858 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:36:46,951 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:36:51,952 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:36:55,224 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:36:55,226 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:36:55,226 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:36:55,229 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:36:55,868 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:36:56,394 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:36:56,871 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:36:57,397 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:36:59,891 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:36:59,892 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:37:03,050 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:37:04,301 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:37:04,303 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:37:04,303 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:37:04,306 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:37:04,881 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:37:04,882 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:37:08,308 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:37:13,277 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:37:13,278 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:37:13,278 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:37:13,280 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:37:13,891 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:37:14,281 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:37:14,893 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:37:14,894 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:37:14,898 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:37:19,996 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:37:23,330 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:37:23,332 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:37:23,332 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:37:23,334 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:37:23,905 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:37:24,907 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:37:25,335 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:37:26,398 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:37:29,917 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:37:29,918 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:37:31,017 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:37:32,466 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:37:32,468 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:37:32,468 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:37:32,470 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:37:32,916 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:37:32,916 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:37:36,509 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:37:41,511 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:37:41,519 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:37:41,521 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:37:41,521 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:37:41,523 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:37:41,924 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:37:42,927 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:37:44,917 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:37:44,918 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:37:47,040 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:37:50,563 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:37:50,564 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:37:50,565 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:37:50,567 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:37:50,936 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:37:50,936 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:37:52,568 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:37:56,401 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:37:58,404 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:37:59,483 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:37:59,485 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:37:59,485 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:37:59,487 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:37:59,917 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:37:59,919 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:37:59,945 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:38:00,947 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:38:04,049 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:38:08,503 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:38:08,505 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:38:08,505 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:38:08,507 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:38:08,957 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:38:08,957 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:38:09,509 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:38:14,510 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:38:14,943 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:38:14,944 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:38:17,446 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:38:17,447 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:38:17,447 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:38:17,449 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:38:17,966 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:38:18,968 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:38:20,450 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:38:25,452 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:38:26,405 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:38:26,675 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:38:26,677 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:38:26,678 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:38:26,680 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:38:26,976 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:38:28,978 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:38:29,942 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:38:29,943 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:38:31,094 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:38:35,517 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:38:35,519 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:38:35,519 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:38:35,522 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:38:35,985 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:38:36,523 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:38:36,988 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:38:41,524 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:38:44,206 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:38:44,209 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:38:44,210 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:38:44,212 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:38:44,942 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:38:44,943 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:38:44,997 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:38:44,998 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:38:47,094 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:38:52,094 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:38:52,937 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:38:52,938 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:38:52,939 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:38:52,941 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:38:53,008 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:38:55,011 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:38:56,409 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:38:57,410 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:38:59,942 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:38:59,943 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:39:01,914 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:39:01,916 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:39:01,917 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:39:01,919 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:39:02,018 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:39:02,920 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:39:03,020 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:39:07,921 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:39:11,229 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:39:11,231 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:39:11,231 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:39:11,234 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:39:12,029 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:39:13,031 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:39:13,235 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:39:14,942 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:39:14,943 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:39:19,010 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:39:20,569 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:39:20,571 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:39:20,571 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:39:20,574 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:39:21,042 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:39:21,043 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:39:24,576 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:39:26,412 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:39:29,944 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:39:29,945 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:39:30,059 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:39:30,294 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:39:30,296 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:39:30,296 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:39:30,299 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:39:31,054 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:39:31,055 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:39:35,301 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:39:39,949 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:39:39,951 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:39:39,952 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:39:39,954 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:39:40,064 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:39:40,955 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:39:41,067 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:39:44,942 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:39:44,944 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:39:46,047 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:39:49,608 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:39:49,610 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:39:49,610 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:39:49,614 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:39:50,077 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:39:51,079 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:39:51,615 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:39:56,416 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:39:57,418 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:39:59,124 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:39:59,126 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:39:59,127 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:39:59,130 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:39:59,982 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:39:59,983 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:40:00,091 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:40:01,093 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:40:03,098 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:40:07,967 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:40:07,969 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:40:07,969 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:40:07,971 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:40:08,101 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:40:08,972 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:40:09,102 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:40:13,973 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:40:14,975 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:40:14,975 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:40:16,631 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:40:16,633 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:40:16,633 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:40:16,635 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:40:17,114 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:40:17,114 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:40:19,637 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:40:24,638 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:40:25,963 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:40:25,964 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:40:25,965 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:40:25,967 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:40:26,123 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:40:26,419 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:40:27,125 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:40:29,975 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:40:29,976 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:40:30,047 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:40:35,048 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:40:35,240 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:40:35,241 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:40:35,242 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:40:35,245 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:40:36,133 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:40:37,135 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:40:40,246 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:40:44,367 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:40:44,368 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:40:44,369 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:40:44,371 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:40:44,975 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:40:44,976 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:40:45,143 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:40:45,144 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:40:46,140 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:40:51,141 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:40:53,542 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:40:53,545 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:40:53,545 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:40:53,548 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:40:54,152 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:40:55,155 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:40:56,423 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:40:56,425 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:40:59,975 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:40:59,976 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:41:02,040 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:41:03,088 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:41:03,090 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:41:03,091 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:41:03,093 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:41:03,165 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:41:05,168 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:41:07,095 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:41:12,096 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:41:12,543 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:41:12,545 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:41:12,546 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:41:12,549 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:41:13,179 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:41:13,180 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:41:14,976 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:41:14,977 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:41:18,067 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:41:22,058 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:41:22,060 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:41:22,060 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:41:22,063 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:41:22,191 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:41:23,194 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:41:24,064 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:41:26,426 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:41:29,429 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:41:29,976 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:41:29,977 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:41:31,480 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:41:31,482 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:41:31,482 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:41:31,484 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:41:32,204 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:41:33,206 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:41:34,485 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:41:39,123 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:41:39,125 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:41:39,125 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:41:39,128 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:41:39,212 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:41:40,129 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:41:41,215 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:41:44,999 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:41:45,000 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:41:46,060 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:41:47,206 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:41:47,207 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:41:47,208 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:41:47,211 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:41:47,221 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:41:49,225 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:41:51,249 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:41:55,067 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:41:55,068 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:41:55,069 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:41:55,070 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:41:55,230 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:41:56,430 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:41:56,435 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:41:57,232 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:42:00,057 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:42:00,058 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:42:02,119 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:42:03,093 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:42:03,094 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:42:03,095 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:42:03,096 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:42:03,238 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:42:05,240 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:42:08,098 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:42:11,003 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:42:11,005 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:42:11,005 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:42:11,008 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:42:11,246 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:42:13,250 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:42:14,009 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:42:15,057 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:42:15,059 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:42:19,153 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:42:19,923 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:42:19,924 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:42:19,925 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:42:19,926 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:42:20,258 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:42:21,259 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:42:24,966 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:42:26,433 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:42:28,122 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:42:28,123 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:42:28,124 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:42:28,125 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:42:28,265 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:42:29,266 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:42:30,060 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:42:30,062 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:42:30,182 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:42:35,182 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:42:37,525 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:42:37,527 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:42:37,528 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:42:37,531 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:42:38,277 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:42:39,278 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:42:40,532 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:42:45,100 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:42:45,101 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:42:46,180 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:42:47,503 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:42:47,505 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:42:47,505 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:42:47,507 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:42:48,288 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:42:49,290 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:42:51,509 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:42:56,437 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:42:56,463 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:42:56,466 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:42:56,466 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:42:56,468 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:42:57,299 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:42:57,299 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:42:57,473 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:43:00,100 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:43:00,101 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:43:02,873 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:43:02,875 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:43:02,876 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:43:02,876 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:43:02,878 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:43:03,307 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:43:03,307 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:43:07,917 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:43:10,030 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:43:10,033 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:43:10,033 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:43:10,035 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:43:10,314 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:43:11,317 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:43:13,036 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:43:15,100 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:43:15,101 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:43:18,147 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:43:18,149 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:43:18,149 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:43:18,150 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:43:18,151 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:43:18,326 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:43:19,328 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:43:23,189 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:43:24,692 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:43:24,693 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:43:24,694 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:43:24,695 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:43:25,334 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:43:25,335 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:43:26,440 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:43:28,442 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:43:30,100 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:43:30,101 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:43:31,413 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:43:31,415 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:43:31,415 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:43:31,418 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:43:32,341 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:43:33,342 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:43:33,457 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:43:38,402 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:43:38,404 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:43:38,404 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:43:38,406 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:43:39,350 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:43:39,350 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:43:39,407 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:43:44,408 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:43:44,764 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:43:44,766 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:43:44,766 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:43:44,769 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:43:45,101 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:43:45,102 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:43:45,356 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:43:45,357 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:43:50,244 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:43:51,535 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:43:51,536 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:43:51,536 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:43:51,538 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:43:52,362 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:43:53,363 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:43:55,577 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:43:56,444 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:43:57,768 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:43:57,770 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:43:57,770 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:43:57,773 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:43:58,369 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:43:59,371 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:44:00,106 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-12 19:44:00,107 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: stop_status
+2025-02-12 19:44:01,232 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:44:04,941 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-12 19:44:04,943 DEBUG   SenderThread:1095426 [sender.py:send():379] send: history
+2025-02-12 19:44:04,944 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: summary_record
+2025-02-12 19:44:04,945 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:44:05,391 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:44:05,391 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:44:06,826 DEBUG   SenderThread:1095426 [sender.py:send():379] send: exit
+2025-02-12 19:44:06,827 INFO    SenderThread:1095426 [sender.py:send_exit():584] handling exit code: 0
+2025-02-12 19:44:06,827 INFO    SenderThread:1095426 [sender.py:send_exit():586] handling runtime: 1000
+2025-02-12 19:44:06,834 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:44:06,834 INFO    SenderThread:1095426 [sender.py:send_exit():592] send defer
+2025-02-12 19:44:06,835 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: defer
+2025-02-12 19:44:06,835 INFO    HandlerThread:1095426 [handler.py:handle_request_defer():170] handle defer: 0
+2025-02-12 19:44:06,836 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:44:06,836 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: defer
+2025-02-12 19:44:06,837 INFO    SenderThread:1095426 [sender.py:send_request_defer():608] handle sender defer: 0
+2025-02-12 19:44:06,837 INFO    SenderThread:1095426 [sender.py:transition_state():612] send defer: 1
+2025-02-12 19:44:06,837 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: defer
+2025-02-12 19:44:06,837 INFO    HandlerThread:1095426 [handler.py:handle_request_defer():170] handle defer: 1
+2025-02-12 19:44:06,838 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: defer
+2025-02-12 19:44:06,838 INFO    SenderThread:1095426 [sender.py:send_request_defer():608] handle sender defer: 1
+2025-02-12 19:44:06,838 INFO    SenderThread:1095426 [sender.py:transition_state():612] send defer: 2
+2025-02-12 19:44:06,839 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: defer
+2025-02-12 19:44:06,839 INFO    HandlerThread:1095426 [handler.py:handle_request_defer():170] handle defer: 2
+2025-02-12 19:44:06,839 INFO    HandlerThread:1095426 [system_monitor.py:finish():190] Stopping system monitor
+2025-02-12 19:44:06,839 DEBUG   SystemMonitor:1095426 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2025-02-12 19:44:06,842 DEBUG   SystemMonitor:1095426 [system_monitor.py:_start():170] Publishing last batch of metrics
+2025-02-12 19:44:06,845 INFO    HandlerThread:1095426 [interfaces.py:finish():202] Joined cpu monitor
+2025-02-12 19:44:06,846 INFO    HandlerThread:1095426 [interfaces.py:finish():202] Joined disk monitor
+2025-02-12 19:44:07,397 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:44:07,511 INFO    HandlerThread:1095426 [interfaces.py:finish():202] Joined gpu monitor
+2025-02-12 19:44:07,512 INFO    HandlerThread:1095426 [interfaces.py:finish():202] Joined memory monitor
+2025-02-12 19:44:07,513 INFO    HandlerThread:1095426 [interfaces.py:finish():202] Joined network monitor
+2025-02-12 19:44:07,515 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: defer
+2025-02-12 19:44:07,515 INFO    SenderThread:1095426 [sender.py:send_request_defer():608] handle sender defer: 2
+2025-02-12 19:44:07,515 INFO    SenderThread:1095426 [sender.py:transition_state():612] send defer: 3
+2025-02-12 19:44:07,516 DEBUG   SenderThread:1095426 [sender.py:send():379] send: stats
+2025-02-12 19:44:07,518 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: defer
+2025-02-12 19:44:07,518 INFO    HandlerThread:1095426 [handler.py:handle_request_defer():170] handle defer: 3
+2025-02-12 19:44:07,519 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: defer
+2025-02-12 19:44:07,519 INFO    SenderThread:1095426 [sender.py:send_request_defer():608] handle sender defer: 3
+2025-02-12 19:44:07,519 INFO    SenderThread:1095426 [sender.py:transition_state():612] send defer: 4
+2025-02-12 19:44:07,520 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: defer
+2025-02-12 19:44:07,520 INFO    HandlerThread:1095426 [handler.py:handle_request_defer():170] handle defer: 4
+2025-02-12 19:44:07,521 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: defer
+2025-02-12 19:44:07,521 INFO    SenderThread:1095426 [sender.py:send_request_defer():608] handle sender defer: 4
+2025-02-12 19:44:07,521 INFO    SenderThread:1095426 [sender.py:transition_state():612] send defer: 5
+2025-02-12 19:44:07,521 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: defer
+2025-02-12 19:44:07,521 INFO    HandlerThread:1095426 [handler.py:handle_request_defer():170] handle defer: 5
+2025-02-12 19:44:07,522 DEBUG   SenderThread:1095426 [sender.py:send():379] send: summary
+2025-02-12 19:44:07,528 INFO    SenderThread:1095426 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-02-12 19:44:07,529 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: defer
+2025-02-12 19:44:07,529 INFO    SenderThread:1095426 [sender.py:send_request_defer():608] handle sender defer: 5
+2025-02-12 19:44:07,530 INFO    SenderThread:1095426 [sender.py:transition_state():612] send defer: 6
+2025-02-12 19:44:07,530 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: defer
+2025-02-12 19:44:07,530 INFO    HandlerThread:1095426 [handler.py:handle_request_defer():170] handle defer: 6
+2025-02-12 19:44:07,531 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: defer
+2025-02-12 19:44:07,531 INFO    SenderThread:1095426 [sender.py:send_request_defer():608] handle sender defer: 6
+2025-02-12 19:44:07,531 INFO    SenderThread:1095426 [sender.py:transition_state():612] send defer: 7
+2025-02-12 19:44:07,532 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: status_report
+2025-02-12 19:44:07,532 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: defer
+2025-02-12 19:44:07,532 INFO    HandlerThread:1095426 [handler.py:handle_request_defer():170] handle defer: 7
+2025-02-12 19:44:07,533 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: defer
+2025-02-12 19:44:07,533 INFO    SenderThread:1095426 [sender.py:send_request_defer():608] handle sender defer: 7
+2025-02-12 19:44:07,827 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: poll_exit
+2025-02-12 19:44:08,398 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/wandb-summary.json
+2025-02-12 19:44:09,719 INFO    SenderThread:1095426 [sender.py:transition_state():612] send defer: 8
+2025-02-12 19:44:09,719 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: poll_exit
+2025-02-12 19:44:09,720 DEBUG   HandlerThread:1095426 [handler.py:handle_request():144] handle_request: defer
+2025-02-12 19:44:09,720 INFO    HandlerThread:1095426 [handler.py:handle_request_defer():170] handle defer: 8
+2025-02-12 19:44:09,721 DEBUG   SenderThread:1095426 [sender.py:send_request():406] send_request: defer
+2025-02-12 19:44:09,721 INFO    SenderThread:1095426 [sender.py:send_request_defer():608] handle sender defer: 8
+2025-02-12 19:44:09,721 INFO    SenderThread:1095426 [job_builder.py:build():281] Attempting to build job artifact
+2025-02-12 19:44:09,724 INFO    SenderThread:1095426 [job_builder.py:_get_source_type():400] is repo sourced job
+2025-02-12 19:44:10,401 INFO    Thread-12 :1095426 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/files/output.log
+2025-02-12 19:44:10,721 INFO    HandlerThread:1095426 [handler.py:finish():857] shutting down handler
+2025-02-12 19:44:10,721 INFO    WriterThread:1095426 [datastore.py:close():294] close: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/wandb/run-20250212_192725-b721ccoa/run-b721ccoa.wandb
+2025-02-12 19:44:10,724 ERROR   StreamThr :1095426 [internal.py:wandb_internal():174] Thread SenderThread:
+Traceback (most recent call last):
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/lib/filesystem.py", line 28, in mkdir_exists_ok
+    os.makedirs(dir_name, exist_ok=True)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/os.py", line 215, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/os.py", line 225, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/afs/csail.mit.edu/u/n/nmorgan/.cache/wandb'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/internal/internal_util.py", line 49, in run
+    self._run()
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/internal/internal_util.py", line 100, in _run
+    self._process(record)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/internal/internal.py", line 328, in _process
+    self._sm.send(record)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/internal/sender.py", line 386, in send
+    send_handler(record)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/internal/sender.py", line 408, in send_request
+    send_handler(record)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/internal/sender.py", line 640, in send_request_defer
+    self._flush_job()
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/internal/sender.py", line 1628, in _flush_job
+    artifact = self._job_builder.build()
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/internal/job_builder.py", line 372, in build
+    artifact = JobArtifact(name)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/internal/job_builder.py", line 74, in __init__
+    super().__init__(name, "placeholder", *args, **kwargs)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/artifacts/artifact.py", line 172, in __init__
+    self._storage_policy = WandbStoragePolicy(
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/artifacts/storage_policies/wandb_storage_policy.py", line 68, in __init__
+    self._cache = cache or get_artifacts_cache()
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/artifacts/artifacts_cache.py", line 173, in get_artifacts_cache
+    _artifacts_cache = ArtifactsCache(cache_dir)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/artifacts/artifacts_cache.py", line 36, in __init__
+    mkdir_exists_ok(self._cache_dir)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/lib/filesystem.py", line 32, in mkdir_exists_ok
+    raise PermissionError(f"{dir_name!s} is not writable") from e
+PermissionError: /afs/csail.mit.edu/u/n/nmorgan/.cache/wandb/artifacts is not writable

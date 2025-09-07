@@ -1,0 +1,8 @@
+
+********** HERE A ****************
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py", line 24, in main
+    data_class = getattr(data_module, f"{config.data.name.upper()}Dataset")
+AttributeError: module 'data.scifi' has no attribute 'SCIFIDataset'
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

@@ -1,0 +1,25 @@
+/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/huggingface_hub/file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+********** HERE A ****************
+<class 'data.scifi.SCIFIDataset'>
+{'model_device': 'cuda:0', 'editor_device': 'cuda:0', 'data': {'name': 'scifi', 'n_edits': 400, 'batch_size': 32, 'train_path': '/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/data_files/scifi_train.json', 'valid_path': '/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/data_files/scifi_test.json'}, 'model': {'name_or_path': 'bert-large-cased', 'weight_path': '/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/model_files/bert_large_cased', 'class_name': 'AutoModelForSCIFI', 'edit_modules': ['backbone.encoder.layer.18.output.dense', 'backbone.encoder.layer.19.output.dense', 'backbone.encoder.layer.20.output.dense', 'backbone.encoder.layer.21.output.dense', 'backbone.encoder.layer.22.output.dense', 'backbone.encoder.layer.23.output.dense'], 'half': False}, 'editor': {'name': 'malmen', 'rank': 1920, 'n_blocks': 2, 'lr': 1e-06, 'meta_lr': 1e-05, 'loc_coef': 1, 'max_grad_norm': 1, 'n_epochs': 1, 'batch_size': 1024, 'token': 'ans', 'cache_dir': 'cache/', 'load_checkpoint': False}}
+********** HERE B ****************
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py", line 34, in main
+    editor_module = importlib.import_module(f"editor.{config.editor.name}")
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/editor/malmen.py", line 9, in <module>
+    from editor.base import BaseEditor
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/editor/base.py", line 163
+    with TracerDict(
+IndentationError: unexpected indent
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+********** HERE C ****************

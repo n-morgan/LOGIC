@@ -1,0 +1,29 @@
+2025-05-12 21:53:02,260 INFO    MainThread:603672 [wandb_setup.py:_flush():76] Current SDK version is 0.15.8
+2025-05-12 21:53:02,260 INFO    MainThread:603672 [wandb_setup.py:_flush():76] Configure stats pid to 603672
+2025-05-12 21:53:02,260 INFO    MainThread:603672 [wandb_setup.py:_flush():76] Loading settings from /afs/csail.mit.edu/u/n/nmorgan/.config/wandb/settings
+2025-05-12 21:53:02,260 INFO    MainThread:603672 [wandb_setup.py:_flush():76] Loading settings from /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/wandb/settings
+2025-05-12 21:53:02,260 INFO    MainThread:603672 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2025-05-12 21:53:02,260 INFO    MainThread:603672 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'main.py', 'program': '/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py'}
+2025-05-12 21:53:02,260 INFO    MainThread:603672 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2025-05-12 21:53:02,260 INFO    MainThread:603672 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2025-05-12 21:53:02,260 INFO    MainThread:603672 [wandb_init.py:_log_setup():507] Logging user logs to /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/wandb/run-20250512_215302-9p1fg1an/logs/debug.log
+2025-05-12 21:53:02,260 INFO    MainThread:603672 [wandb_init.py:_log_setup():508] Logging internal logs to /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/wandb/run-20250512_215302-9p1fg1an/logs/debug-internal.log
+2025-05-12 21:53:02,261 INFO    MainThread:603672 [wandb_init.py:init():547] calling init triggers
+2025-05-12 21:53:02,261 INFO    MainThread:603672 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {'model_device': 'cuda:0', 'editor_device': 'cuda:0', 'data': {'name': 'scifi', 'n_edits': 400, 'batch_size': 32, 'train_path': '/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/data_files/scifi_train.json', 'valid_path': '/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/data_files/scifi_test.json'}, 'model': {'name_or_path': 'bert-base-uncased', 'weight_path': '/data/sls/scratch/nmorgan/LOGIC/rag_models/bert_model', 'class_name': 'AutoModelForSCIFI', 'edit_modules': ['backbone.encoder.layer.9.output.dense', 'backbone.encoder.layer.10.output.dense', 'backbone.encoder.layer.11.output.dense'], 'half': False}, 'editor': {'name': 'malmen', 'rank': 1920, 'n_blocks': 2, 'lr': 1e-06, 'meta_lr': 1e-05, 'loc_coef': 1, 'max_grad_norm': 1, 'n_epochs': 1, 'batch_size': 1024, 'token': 'ans', 'cache_dir': 'cache/', 'load_checkpoint': False}}
+2025-05-12 21:53:02,261 INFO    MainThread:603672 [wandb_init.py:init():596] starting backend
+2025-05-12 21:53:02,261 INFO    MainThread:603672 [wandb_init.py:init():600] setting up manager
+2025-05-12 21:53:02,262 INFO    MainThread:603672 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-05-12 21:53:02,266 INFO    MainThread:603672 [wandb_init.py:init():606] backend started and connected
+2025-05-12 21:53:02,270 INFO    MainThread:603672 [wandb_init.py:init():697] updated telemetry
+2025-05-12 21:53:02,296 INFO    MainThread:603672 [wandb_init.py:init():730] communicating run to backend with 60.0 second timeout
+2025-05-12 21:53:02,581 INFO    MainThread:603672 [wandb_run.py:_on_init():2180] communicating current version
+2025-05-12 21:53:02,648 INFO    MainThread:603672 [wandb_run.py:_on_init():2189] got version response upgrade_message: "wandb version 0.19.11 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2025-05-12 21:53:02,649 INFO    MainThread:603672 [wandb_init.py:init():781] starting run threads in backend
+2025-05-12 21:53:06,167 INFO    MainThread:603672 [wandb_run.py:_console_start():2159] atexit reg
+2025-05-12 21:53:06,168 INFO    MainThread:603672 [wandb_run.py:_redirect():2014] redirect: wrap_raw
+2025-05-12 21:53:06,169 INFO    MainThread:603672 [wandb_run.py:_redirect():2079] Wrapping output streams.
+2025-05-12 21:53:06,169 INFO    MainThread:603672 [wandb_run.py:_redirect():2104] Redirects installed.
+2025-05-12 21:53:06,170 INFO    MainThread:603672 [wandb_init.py:init():822] run started, returning control to user process
+2025-05-12 21:53:20,588 WARNING MsgRouterThr:603672 [router.py:message_loop():77] message_loop has been closed

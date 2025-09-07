@@ -1,0 +1,14 @@
+name_or_path: bert-large-cased
+weight_path: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/model_files/bert_large_cased
+class_name: AutoModelForSCIFI
+edit_modules:
+- backbone.encoder.layer.18.output.dense
+- backbone.encoder.layer.19.output.dense
+- backbone.encoder.layer.20.output.dense
+- backbone.encoder.layer.21.output.dense
+- backbone.encoder.layer.22.output.dense
+- backbone.encoder.layer.23.output.dense
+# - backbone.encoder.layer.21.intermediate.dense
+# - backbone.encoder.layer.22.intermediate.dense
+# - backbone.encoder.layer.23.intermediate.dense
+half: False

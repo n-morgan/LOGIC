@@ -1,0 +1,13 @@
+/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/huggingface_hub/file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/main.py", line 32, in main
+    editor.run(train_loader, valid_loader)
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/editor/base.py", line 165, in run
+    empty_cache(self.config.editor.cache_dir)
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/util.py", line 26, in empty_cache
+    os.rmdir(full_path)  # or shutil.rmtree(full_path) for non-empty directories
+OSError: [Errno 39] Directory not empty: 'cache/artifacts'
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Removing directory: cache/artifacts

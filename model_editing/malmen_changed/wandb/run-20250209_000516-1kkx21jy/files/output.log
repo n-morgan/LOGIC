@@ -1,0 +1,13 @@
+/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/huggingface_hub/file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/main.py", line 27, in main
+    model = make_model(config.model).to(config.model_device)
+  File "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/model.py", line 40, in make_model
+    model.load_state_dict(new_state_dict, strict=False)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/torch/nn/modules/module.py", line 2041, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for AutoModelForFEVER:
+	size mismatch for backbone.embeddings.word_embeddings.weight: copying a param with shape torch.Size([30522, 1024]) from checkpoint, the shape in current model is torch.Size([28996, 1024]).
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

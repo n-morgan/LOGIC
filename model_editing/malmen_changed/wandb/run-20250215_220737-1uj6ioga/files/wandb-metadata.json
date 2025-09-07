@@ -1,0 +1,277 @@
+{
+    "os": "Linux-5.15.0-101-generic-x86_64-with-glibc2.35",
+    "python": "3.10.16",
+    "heartbeatAt": "2025-02-16T03:07:38.550352",
+    "startedAt": "2025-02-16T03:07:37.888960",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen/main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/ChenmienTan/malmen",
+        "commit": "1df295dc032b3ff9a002976e081432cb4f09d342"
+    },
+    "email": null,
+    "root": "/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen",
+    "host": "sls-1080-3.csail.mit.edu",
+    "username": "nmorgan",
+    "executable": "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/bin/python",
+    "cpu_count": 24,
+    "cpu_count_logical": 48,
+    "cpu_freq": {
+        "current": 1683.3850208333333,
+        "min": 1200.0,
+        "max": 2900.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1700.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1400.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1213.039,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1400.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1900.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 2900.0
+        }
+    ],
+    "disk": {
+        "total": 1798.4847412109375,
+        "used": 7.078125
+    },
+    "memory": {
+        "total": 251.76703262329102
+    }
+}

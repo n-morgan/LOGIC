@@ -1,0 +1,153 @@
+2025-04-23 10:33:41,337 INFO    StreamThr :3414492 [internal.py:wandb_internal():86] W&B internal server running at pid: 3414492, started at: 2025-04-23 10:33:41.335799
+2025-04-23 10:33:41,340 DEBUG   HandlerThread:3414492 [handler.py:handle_request():144] handle_request: status
+2025-04-23 10:33:41,342 INFO    WriterThread:3414492 [datastore.py:open_for_write():85] open: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/wandb/run-20250423_103341-law5kit4/run-law5kit4.wandb
+2025-04-23 10:33:41,346 DEBUG   SenderThread:3414492 [sender.py:send():379] send: header
+2025-04-23 10:33:41,353 DEBUG   SenderThread:3414492 [sender.py:send():379] send: run
+2025-04-23 10:33:41,584 INFO    SenderThread:3414492 [dir_watcher.py:__init__():211] watching files in: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/wandb/run-20250423_103341-law5kit4/files
+2025-04-23 10:33:41,584 INFO    SenderThread:3414492 [sender.py:_start_run_threads():1121] run started: law5kit4 with start time 1745418821.335788
+2025-04-23 10:33:41,587 DEBUG   SenderThread:3414492 [sender.py:send_request():406] send_request: summary_record
+2025-04-23 10:33:41,588 INFO    SenderThread:3414492 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-04-23 10:33:41,603 DEBUG   HandlerThread:3414492 [handler.py:handle_request():144] handle_request: check_version
+2025-04-23 10:33:41,604 DEBUG   SenderThread:3414492 [sender.py:send_request():406] send_request: check_version
+2025-04-23 10:33:41,682 DEBUG   HandlerThread:3414492 [handler.py:handle_request():144] handle_request: run_start
+2025-04-23 10:33:41,710 DEBUG   HandlerThread:3414492 [system_info.py:__init__():31] System info init
+2025-04-23 10:33:41,710 DEBUG   HandlerThread:3414492 [system_info.py:__init__():46] System info init done
+2025-04-23 10:33:41,710 INFO    HandlerThread:3414492 [system_monitor.py:start():181] Starting system monitor
+2025-04-23 10:33:41,710 INFO    SystemMonitor:3414492 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2025-04-23 10:33:41,710 INFO    HandlerThread:3414492 [system_monitor.py:probe():201] Collecting system info
+2025-04-23 10:33:41,711 INFO    SystemMonitor:3414492 [interfaces.py:start():190] Started cpu monitoring
+2025-04-23 10:33:41,711 INFO    SystemMonitor:3414492 [interfaces.py:start():190] Started disk monitoring
+2025-04-23 10:33:41,712 INFO    SystemMonitor:3414492 [interfaces.py:start():190] Started gpu monitoring
+2025-04-23 10:33:41,712 INFO    SystemMonitor:3414492 [interfaces.py:start():190] Started memory monitoring
+2025-04-23 10:33:41,713 INFO    SystemMonitor:3414492 [interfaces.py:start():190] Started network monitoring
+2025-04-23 10:33:41,743 DEBUG   HandlerThread:3414492 [system_info.py:probe():195] Probing system
+2025-04-23 10:33:41,746 DEBUG   HandlerThread:3414492 [system_info.py:_probe_git():180] Probing git
+2025-04-23 10:33:41,767 DEBUG   HandlerThread:3414492 [system_info.py:_probe_git():188] Probing git done
+2025-04-23 10:33:41,767 DEBUG   HandlerThread:3414492 [system_info.py:probe():240] Probing system done
+2025-04-23 10:33:41,767 DEBUG   HandlerThread:3414492 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-107-generic-x86_64-with-glibc2.35', 'python': '3.10.16', 'heartbeatAt': '2025-04-23T14:33:41.743192', 'startedAt': '2025-04-23T14:33:41.323445', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/main.py', 'codePath': 'main.py', 'git': {'remote': 'https://github.com/ChenmienTan/malmen', 'commit': '1df295dc032b3ff9a002976e081432cb4f09d342'}, 'email': None, 'root': '/data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed', 'host': 'sls-a5-1.csail.mit.edu', 'username': 'nmorgan', 'executable': '/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/bin/python', 'cpu_count': 48, 'cpu_count_logical': 96, 'cpu_freq': {'current': 2103.5659375, 'min': 800.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 799.999, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 1670.756, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2099.998, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2016.834, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}], 'disk': {'total': 860.4886474609375, 'used': 7.3521728515625}, 'gpu': 'NVIDIA RTX A5000', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}, {'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}, {'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}, {'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}], 'memory': {'total': 503.50934982299805}}
+2025-04-23 10:33:41,768 INFO    HandlerThread:3414492 [system_monitor.py:probe():211] Finished collecting system info
+2025-04-23 10:33:41,768 INFO    HandlerThread:3414492 [system_monitor.py:probe():214] Publishing system info
+2025-04-23 10:33:41,768 DEBUG   HandlerThread:3414492 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2025-04-23 10:33:41,770 DEBUG   HandlerThread:3414492 [system_info.py:_save_pip():67] Saving pip packages done
+2025-04-23 10:33:41,770 DEBUG   HandlerThread:3414492 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2025-04-23 10:33:42,590 INFO    Thread-12 :3414492 [dir_watcher.py:_on_file_created():271] file/dir created: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/wandb/run-20250423_103341-law5kit4/files/conda-environment.yaml
+2025-04-23 10:33:42,590 INFO    Thread-12 :3414492 [dir_watcher.py:_on_file_created():271] file/dir created: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/wandb/run-20250423_103341-law5kit4/files/wandb-summary.json
+2025-04-23 10:33:42,591 INFO    Thread-12 :3414492 [dir_watcher.py:_on_file_created():271] file/dir created: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/wandb/run-20250423_103341-law5kit4/files/requirements.txt
+2025-04-23 10:33:43,924 DEBUG   HandlerThread:3414492 [system_info.py:_save_conda():86] Saving conda packages done
+2025-04-23 10:33:43,927 INFO    HandlerThread:3414492 [system_monitor.py:probe():216] Finished publishing system info
+2025-04-23 10:33:43,935 DEBUG   SenderThread:3414492 [sender.py:send():379] send: files
+2025-04-23 10:33:43,935 INFO    SenderThread:3414492 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2025-04-23 10:33:43,950 DEBUG   HandlerThread:3414492 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-23 10:33:43,951 DEBUG   SenderThread:3414492 [sender.py:send_request():406] send_request: stop_status
+2025-04-23 10:33:44,080 DEBUG   SenderThread:3414492 [sender.py:send():379] send: telemetry
+2025-04-23 10:33:44,321 INFO    wandb-upload_0:3414492 [upload_job.py:push():131] Uploaded file /tmp/tmpzlo2u41bwandb/sw6fevyp-wandb-metadata.json
+2025-04-23 10:33:44,589 INFO    Thread-12 :3414492 [dir_watcher.py:_on_file_created():271] file/dir created: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/wandb/run-20250423_103341-law5kit4/files/output.log
+2025-04-23 10:33:44,589 INFO    Thread-12 :3414492 [dir_watcher.py:_on_file_created():271] file/dir created: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/wandb/run-20250423_103341-law5kit4/files/wandb-metadata.json
+2025-04-23 10:33:46,599 INFO    Thread-12 :3414492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/wandb/run-20250423_103341-law5kit4/files/output.log
+2025-04-23 10:33:47,083 DEBUG   HandlerThread:3414492 [handler.py:handle_request():144] handle_request: status_report
+2025-04-23 10:33:50,840 DEBUG   SenderThread:3414492 [sender.py:send():379] send: exit
+2025-04-23 10:33:50,840 INFO    SenderThread:3414492 [sender.py:send_exit():584] handling exit code: 0
+2025-04-23 10:33:50,840 INFO    SenderThread:3414492 [sender.py:send_exit():586] handling runtime: 9
+2025-04-23 10:33:50,844 INFO    SenderThread:3414492 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-04-23 10:33:50,845 INFO    SenderThread:3414492 [sender.py:send_exit():592] send defer
+2025-04-23 10:33:50,845 DEBUG   HandlerThread:3414492 [handler.py:handle_request():144] handle_request: defer
+2025-04-23 10:33:50,846 INFO    HandlerThread:3414492 [handler.py:handle_request_defer():170] handle defer: 0
+2025-04-23 10:33:50,846 DEBUG   SenderThread:3414492 [sender.py:send_request():406] send_request: defer
+2025-04-23 10:33:50,846 INFO    SenderThread:3414492 [sender.py:send_request_defer():608] handle sender defer: 0
+2025-04-23 10:33:50,846 INFO    SenderThread:3414492 [sender.py:transition_state():612] send defer: 1
+2025-04-23 10:33:50,847 DEBUG   HandlerThread:3414492 [handler.py:handle_request():144] handle_request: defer
+2025-04-23 10:33:50,847 INFO    HandlerThread:3414492 [handler.py:handle_request_defer():170] handle defer: 1
+2025-04-23 10:33:50,847 DEBUG   SenderThread:3414492 [sender.py:send_request():406] send_request: defer
+2025-04-23 10:33:50,847 INFO    SenderThread:3414492 [sender.py:send_request_defer():608] handle sender defer: 1
+2025-04-23 10:33:50,847 INFO    SenderThread:3414492 [sender.py:transition_state():612] send defer: 2
+2025-04-23 10:33:50,848 DEBUG   HandlerThread:3414492 [handler.py:handle_request():144] handle_request: defer
+2025-04-23 10:33:50,848 INFO    HandlerThread:3414492 [handler.py:handle_request_defer():170] handle defer: 2
+2025-04-23 10:33:50,848 INFO    HandlerThread:3414492 [system_monitor.py:finish():190] Stopping system monitor
+2025-04-23 10:33:50,849 DEBUG   SystemMonitor:3414492 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2025-04-23 10:33:50,850 DEBUG   SystemMonitor:3414492 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2025-04-23 10:33:50,850 DEBUG   SystemMonitor:3414492 [system_monitor.py:_start():170] Publishing last batch of metrics
+2025-04-23 10:33:50,853 INFO    HandlerThread:3414492 [interfaces.py:finish():202] Joined cpu monitor
+2025-04-23 10:33:50,854 INFO    HandlerThread:3414492 [interfaces.py:finish():202] Joined disk monitor
+2025-04-23 10:33:51,419 INFO    HandlerThread:3414492 [interfaces.py:finish():202] Joined gpu monitor
+2025-04-23 10:33:51,419 INFO    HandlerThread:3414492 [interfaces.py:finish():202] Joined memory monitor
+2025-04-23 10:33:51,420 INFO    HandlerThread:3414492 [interfaces.py:finish():202] Joined network monitor
+2025-04-23 10:33:51,421 DEBUG   SenderThread:3414492 [sender.py:send_request():406] send_request: defer
+2025-04-23 10:33:51,421 INFO    SenderThread:3414492 [sender.py:send_request_defer():608] handle sender defer: 2
+2025-04-23 10:33:51,421 INFO    SenderThread:3414492 [sender.py:transition_state():612] send defer: 3
+2025-04-23 10:33:51,421 DEBUG   SenderThread:3414492 [sender.py:send():379] send: stats
+2025-04-23 10:33:51,423 DEBUG   HandlerThread:3414492 [handler.py:handle_request():144] handle_request: defer
+2025-04-23 10:33:51,423 INFO    HandlerThread:3414492 [handler.py:handle_request_defer():170] handle defer: 3
+2025-04-23 10:33:51,423 DEBUG   SenderThread:3414492 [sender.py:send_request():406] send_request: defer
+2025-04-23 10:33:51,423 INFO    SenderThread:3414492 [sender.py:send_request_defer():608] handle sender defer: 3
+2025-04-23 10:33:51,424 INFO    SenderThread:3414492 [sender.py:transition_state():612] send defer: 4
+2025-04-23 10:33:51,424 DEBUG   HandlerThread:3414492 [handler.py:handle_request():144] handle_request: defer
+2025-04-23 10:33:51,424 INFO    HandlerThread:3414492 [handler.py:handle_request_defer():170] handle defer: 4
+2025-04-23 10:33:51,424 DEBUG   SenderThread:3414492 [sender.py:send_request():406] send_request: defer
+2025-04-23 10:33:51,425 INFO    SenderThread:3414492 [sender.py:send_request_defer():608] handle sender defer: 4
+2025-04-23 10:33:51,425 INFO    SenderThread:3414492 [sender.py:transition_state():612] send defer: 5
+2025-04-23 10:33:51,425 DEBUG   HandlerThread:3414492 [handler.py:handle_request():144] handle_request: defer
+2025-04-23 10:33:51,425 INFO    HandlerThread:3414492 [handler.py:handle_request_defer():170] handle defer: 5
+2025-04-23 10:33:51,426 DEBUG   SenderThread:3414492 [sender.py:send():379] send: summary
+2025-04-23 10:33:51,429 INFO    SenderThread:3414492 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-04-23 10:33:51,429 DEBUG   SenderThread:3414492 [sender.py:send_request():406] send_request: defer
+2025-04-23 10:33:51,429 INFO    SenderThread:3414492 [sender.py:send_request_defer():608] handle sender defer: 5
+2025-04-23 10:33:51,429 INFO    SenderThread:3414492 [sender.py:transition_state():612] send defer: 6
+2025-04-23 10:33:51,430 DEBUG   HandlerThread:3414492 [handler.py:handle_request():144] handle_request: defer
+2025-04-23 10:33:51,430 INFO    HandlerThread:3414492 [handler.py:handle_request_defer():170] handle defer: 6
+2025-04-23 10:33:51,430 DEBUG   SenderThread:3414492 [sender.py:send_request():406] send_request: defer
+2025-04-23 10:33:51,430 INFO    SenderThread:3414492 [sender.py:send_request_defer():608] handle sender defer: 6
+2025-04-23 10:33:51,436 DEBUG   HandlerThread:3414492 [handler.py:handle_request():144] handle_request: status_report
+2025-04-23 10:33:51,548 INFO    SenderThread:3414492 [sender.py:transition_state():612] send defer: 7
+2025-04-23 10:33:51,548 DEBUG   HandlerThread:3414492 [handler.py:handle_request():144] handle_request: defer
+2025-04-23 10:33:51,548 INFO    HandlerThread:3414492 [handler.py:handle_request_defer():170] handle defer: 7
+2025-04-23 10:33:51,549 DEBUG   SenderThread:3414492 [sender.py:send_request():406] send_request: defer
+2025-04-23 10:33:51,549 INFO    SenderThread:3414492 [sender.py:send_request_defer():608] handle sender defer: 7
+2025-04-23 10:33:51,608 INFO    Thread-12 :3414492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/wandb/run-20250423_103341-law5kit4/files/config.yaml
+2025-04-23 10:33:51,609 INFO    Thread-12 :3414492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/wandb/run-20250423_103341-law5kit4/files/wandb-summary.json
+2025-04-23 10:33:51,839 DEBUG   HandlerThread:3414492 [handler.py:handle_request():144] handle_request: poll_exit
+2025-04-23 10:33:52,098 INFO    SenderThread:3414492 [sender.py:transition_state():612] send defer: 8
+2025-04-23 10:33:52,098 DEBUG   SenderThread:3414492 [sender.py:send_request():406] send_request: poll_exit
+2025-04-23 10:33:52,099 DEBUG   HandlerThread:3414492 [handler.py:handle_request():144] handle_request: defer
+2025-04-23 10:33:52,099 INFO    HandlerThread:3414492 [handler.py:handle_request_defer():170] handle defer: 8
+2025-04-23 10:33:52,099 DEBUG   SenderThread:3414492 [sender.py:send_request():406] send_request: defer
+2025-04-23 10:33:52,099 INFO    SenderThread:3414492 [sender.py:send_request_defer():608] handle sender defer: 8
+2025-04-23 10:33:52,100 INFO    SenderThread:3414492 [job_builder.py:build():281] Attempting to build job artifact
+2025-04-23 10:33:52,101 INFO    SenderThread:3414492 [job_builder.py:_get_source_type():400] is repo sourced job
+2025-04-23 10:33:52,105 INFO    SenderThread:3414492 [job_builder.py:build():374] adding wandb-job metadata file
+2025-04-23 10:33:52,609 INFO    Thread-12 :3414492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/wandb/run-20250423_103341-law5kit4/files/output.log
+2025-04-23 10:33:52,840 DEBUG   HandlerThread:3414492 [handler.py:handle_request():144] handle_request: poll_exit
+2025-04-23 10:33:52,840 INFO    HandlerThread:3414492 [handler.py:finish():857] shutting down handler
+2025-04-23 10:33:52,841 INFO    WriterThread:3414492 [datastore.py:close():294] close: /data/sls/scratch/nmorgan/LOGIC/model_editing/malmen_changed/wandb/run-20250423_103341-law5kit4/run-law5kit4.wandb
+2025-04-23 10:33:52,843 ERROR   StreamThr :3414492 [internal.py:wandb_internal():174] Thread SenderThread:
+Traceback (most recent call last):
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/internal/internal_util.py", line 49, in run
+    self._run()
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/internal/internal_util.py", line 100, in _run
+    self._process(record)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/internal/internal.py", line 328, in _process
+    self._sm.send(record)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/internal/sender.py", line 386, in send
+    send_handler(record)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/internal/sender.py", line 408, in send_request
+    send_handler(record)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/internal/sender.py", line 640, in send_request_defer
+    self._flush_job()
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/internal/sender.py", line 1628, in _flush_job
+    artifact = self._job_builder.build()
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/internal/job_builder.py", line 375, in build
+    with artifact.new_file("wandb-job.json") as f:
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/artifacts/artifact.py", line 1029, in new_file
+    self.add_file(path, name=name)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/artifacts/artifact.py", line 1078, in add_file
+    return self._add_local_file(name, local_path, digest=digest)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/site-packages/wandb/sdk/artifacts/artifact.py", line 1353, in _add_local_file
+    with tempfile.NamedTemporaryFile(dir=get_staging_dir(), delete=False) as f:
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/tempfile.py", line 575, in NamedTemporaryFile
+    file = _io.open(dir, mode, buffering=buffering,
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/tempfile.py", line 572, in opener
+    fd, name = _mkstemp_inner(dir, prefix, suffix, flags, output_type)
+  File "/data/sls/scratch/nmorgan/dotfiles/miniconda3/envs/logic-edits/lib/python3.10/tempfile.py", line 256, in _mkstemp_inner
+    fd = _os.open(file, flags, 0o600)
+PermissionError: [Errno 13] Permission denied: '/afs/csail.mit.edu/u/n/nmorgan/.local/share/wandb/artifacts/staging/tmpsbbd492j'
